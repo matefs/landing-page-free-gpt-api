@@ -1,0 +1,362 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  color: white;
+  background-color: #1d1d1d;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+header {
+  background-image: url('hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 150px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+}
+
+header h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  font-weight: 700; /* Stronger heading */
+}
+
+header p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+header button {
+  background-color: #007aff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.features {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.feature {
+  text-align: left;
+  background-color: rgba(50, 50, 50, 0.8); /* Slight transparency */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature img {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.testimonials {
+  background-color: #262626;
+  padding: 80px 0;
+}
+
+.testimonial-slider {
+  /* Add your preferred slider implementation here */
+}
+
+.testimonial {
+  text-align: center;
+}
+
+.testimonial p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.testimonial .author {
+  font-style: italic;
+  color: #aaa;
+}
+
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 30px 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+footer li {
+  display: inline;
+  margin: 0 20px;
+}
+
+footer a {
+  color: white;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #007aff; /* Apple blue on hover */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  header {
+    padding: 100px 0;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.benefits .card,
+.how-it-works .card,
+.use-cases .card {
+  background-color: #333;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 16px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.benefits .card:hover,
+.how-it-works .card:hover,
+.use-cases .card:hover {
+  transform: translateY(-4px);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 8px 16px;
+}
+
+.call-to-action {
+  background-color: #262626;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.btn-custom {
+  background-color: #007aff;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn-custom:hover {
+  background-color: #0056b3;
+}
+
+button {
+  background-color: #007aff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.8),
+    rgba(128, 128, 128, 0.8)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.gray-text {
+  color: #7a7a7a;
+}
+
+.how-it-works {
+  background-color: #1d1d1d; /* Match dark theme */
+  padding: 80px 0; /* Padding for spacing */
+  text-align: center; /* Center align heading and content */
+}
+
+.how-it-works h2 {
+  font-size: 2.5em; /* Heading size */
+  color: white; /* White text for contrast */
+  margin-bottom: 40px; /* Spacing below heading */
+}
+
+.card {
+  background-color: #333; /* Darker card background */
+  border-radius: 12px; /* Rounded corners */
+  padding: 20px; /* Internal spacing */
+  margin: 20px 0; /* Spacing between cards */
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 16px; /* Enhanced shadow for depth */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition */
+}
+
+.card:hover {
+  transform: translateY(-4px); /* Lift effect on hover */
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 24px; /* Deeper shadow on hover */
+}
+
+.card p {
+  font-size: 1.1em; /* Slightly larger font size */
+  /* Lighter gray for text */
+  line-height: 1.6; /* Improved line spacing */
+}
+
+.how-it-works {
+  background-color: #1d1d1d; /* Dark theme background */
+  padding: 80px 0; /* Padding for spacing */
+  text-align: center; /* Center align heading */
+}
+
+.how-it-works h2 {
+  font-size: 2.5em; /* Heading size */
+  color: white; /* White text for contrast */
+  margin-bottom: 40px; /* Spacing below heading */
+}
+
+.stepper {
+  display: flex; /* Horizontal layout for steps */
+  justify-content: center; /* Center align steps */
+  position: relative; /* Position relative for connector line */
+}
+
+.step {
+  background-color: #333; /* Dark card background */
+  border-radius: 12px; /* Rounded corners */
+  padding: 20px; /* Internal spacing */
+  margin: 0 20px; /* Spacing between steps */
+  position: relative; /* Position for absolute elements */
+  flex: 1; /* Equal space for each step */
+  color: #e0e0e0; /* Light gray text */
+}
+
+.step-number {
+  background-color: #007aff; /* Apple blue */
+  color: white; /* White text for contrast */
+  border-radius: 50%; /* Circular number */
+  width: 40px; /* Fixed width */
+  height: 40px; /* Fixed height */
+  display: flex; /* Flexbox to center text */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  font-size: 1.2em; /* Number size */
+  position: absolute; /* Positioning the number */
+  top: -20px; /* Move up to overlap */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center adjustment */
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px; /* Subtle shadow */
+}
+
+.step-description {
+  margin-top: 40px; /* Spacing below the number */
+  font-size: 1.1em; /* Font size for description */
+  line-height: 1.6; /* Improved line spacing */
+}
+
+.step:not(:last-child)::after {
+  content: ''; /* Connector line */
+  width: 100%; /* Full width */
+  height: 4px; /* Line thickness */
+  background-color: #007aff; /* Apple blue */
+  position: absolute; /* Positioning the line */
+  top: 50%; /* Center vertically */
+  left: 100%; /* Align to the right of the step */
+  transform: translateY(-50%); /* Center adjustment */
+  z-index: -1; /* Behind the step */
+}
+
+/* Adjust active steps */
+.step.active .step-number {
+  background-color: #0056b3; /* Darker blue for active step */
+}
+
+.step.active + .step .step-number {
+  background-color: #007aff; /* Apple blue for upcoming steps */
+}
+
+.use-cases {
+  background-color: #1d1d1d; /* Dark theme background */
+  padding: 80px 0; /* Padding for spacing */
+  text-align: center; /* Center align heading */
+}
+
+.use-cases h2 {
+  font-size: 2.5em; /* Heading size */
+  color: white; /* White text for contrast */
+  margin-bottom: 40px; /* Spacing below heading */
+}
+
+.card {
+  background-color: #333; /* Dark card background */
+  border-radius: 12px; /* Rounded corners */
+  padding: 20px; /* Internal spacing */
+  margin: 20px 0; /* Spacing between cards */
+  color: #e0e0e0; /* Light gray text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.card:hover {
+  background-color: #444; /* Darker background on hover */
+}
+
+.description {
+  display: none; /* Hidden by default */
+  font-size: 1em; /* Font size for description */
+  margin-top: 10px; /* Spacing above description */
+  line-height: 1.4; /* Improved line spacing */
+}
