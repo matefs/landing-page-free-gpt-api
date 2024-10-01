@@ -360,3 +360,9 @@ h1 {
   margin-top: 10px; /* Spacing above description */
   line-height: 1.4; /* Improved line spacing */
 }
+
+
+img{
+  width: 3em;
+  filter: grayscale(100%);
+}
